@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi primera Web</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/grid.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
     <body>
         <header class="header">
             <h1 class="title">Batman</h1>
-            <img class="title-img" src="./images/batman.jpg" alt="Foto de batman">
+            <!--<img class="title-img" src="./images/batman.jpg" alt="Foto de batman">-->
+            <div class="title-img"></div>
             <p class="title-cite">"Él puede tomar la decisión que nadie más puede, la decisión correcta"</p>
         </header>
         <nav class="navbar">
@@ -22,18 +26,18 @@
                     <a href="">Transporte</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="">Contacto</a>
+                    <a href="contact.html">Contacto</a>
                 </li>
                 <li class="navbar-item">
                     <a href="">Tareas</a>
                 </li>
             </ul>
         </nav>
-        <main>
-            <section class="about-me">
+        <main class="container">
+            <section class="about-me clearfix section-container">
                 <div class="batman-video">
-                    <video controls autoplay>
-                       <source src="./video/batman.mp4" type="video/mp4">
+                    <video controls  width="550" height="300">
+                       <source src="./video/batman.mp4" type="video/mp4" >
                     </video>
                 </div>
                 <div class="batman-info">
@@ -42,9 +46,9 @@
                     <span class="batman-description">Bursas nocere in fatalis lutetia!Sunt solitudoes attrahendam lotus, superbus fluctuses.</span>
                 </div>
             </section>
-            <section class="team">
-                <div>
-                    <div>
+            <section class="team section-reverse section-container">
+                <div class="row container">
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                             <h3>
@@ -60,11 +64,11 @@
                                 </figcaption>
                             </figure>
                             <p class="bio">
-                                "¿Por qué nos caemos, señor? <cite>Batman Begins</cite>
+                                "¿Por qué nos caemos, señor? <cite> - Batman Begins</cite>
                             </p>
                         </article>
                     </div>
-                    <div>
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -80,11 +84,11 @@
                             </figure>
                             <p class="bio">
                                 "O mueres como un héroe, o vives los suficiente
-                                para convertirte en un villano? <cite>El caballero oscuro</cite>
+                                para convertirte en un villano? <cite>- Batman El caballero oscuro</cite>
                             </p>
                         </article>
                     </div>
-                    <div>
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -101,14 +105,14 @@
                             </figure>
                             <p class="bio">
                                 Eres el héroe que Gotham merece, pero no el que
-                                necesita en este momento <cite>Batman Begins</cite>
+                                necesita en este momento <cite>- Batman El caballero oscuro</cite>
                             </p>
                         </article>
                     </div>
                 </div>
             </section>
-            <section class="transport">
-                <div>
+            <section class="transport section-container">
+                <div class="row-flex">
                     <div class="transport-item">
                         <figure>
                             <img class="transport-img" src="./images/car.jpg" alt="Coche batman">
